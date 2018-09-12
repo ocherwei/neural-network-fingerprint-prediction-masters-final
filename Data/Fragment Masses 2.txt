@@ -1,0 +1,5 @@
+Pentose, 132.04
+Deoxyhexose, 146.055
+Hexose, 162.055
+Carboxylic Acid, 46.005
+Acetyl Group, 42.01

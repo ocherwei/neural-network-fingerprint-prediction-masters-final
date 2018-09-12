@@ -1,0 +1,307 @@
+Primary carbon
+Secondary carbon
+Tertiary carbon
+Quaternary carbon
+Alkene
+Alkyne
+Allene
+Alkylchloride
+Alkylfluoride
+Alkylbromide
+Alkyliodide
+Alcohol
+Primary alcohol
+Secondary alcohol
+Tertiary alcohol
+Dialkylether
+Dialkylthioether
+Alkylarylether
+Diarylether
+Alkylarylthioether
+Diarylthioether
+Oxonium
+Amine
+Primary aliph amine
+Secondary aliph amine
+Tertiary aliph amine
+Quaternary aliph ammonium
+Primary arom amine
+Secondary arom amine
+Tertiary arom amine
+Quaternary arom ammonium
+Secondary mixed amine
+Tertiary mixed amine
+Quaternary mixed ammonium
+Ammonium
+Alkylthiol
+Dialkylthioether
+Alkylarylthioether
+Disulfide
+1,2-Aminoalcohol
+1,2-Diol
+1,1-Diol
+Hydroperoxide
+Peroxo
+Organolithium compounds
+Organomagnesium compounds
+Organometallic compounds
+Aldehyde
+Ketone
+Thioaldehyde
+Thioketone
+Imine
+Immonium
+Oxime
+Oximether
+Acetal
+Hemiacetal
+Aminal
+Hemiaminal
+Thioacetal
+Thiohemiacetal
+Halogen acetal like
+Acetal like
+Halogenmethylen ester and similar
+NOS methylen ester and similar
+Hetero methylen ester and similar
+Cyanhydrine
+Chloroalkene
+Fluoroalkene
+Bromoalkene
+Iodoalkene
+Enol
+Endiol
+Enolether
+Enolester
+Enamine
+Thioenol
+Thioenolether
+Acylchloride
+Acylfluoride
+Acylbromide
+Acyliodide
+Acylhalide
+Carboxylic acid
+Carboxylic ester
+Lactone
+Carboxylic anhydride
+Carboxylic acid derivative
+Carbothioic acid
+Carbothioic S ester
+Carbothioic S lactone
+Carbothioic O ester
+Carbothioic O lactone
+Carbothioic halide
+Carbodithioic acid
+Carbodithioic ester
+Carbodithiolactone
+Amide
+Primary amide
+Secondary amide
+Tertiary amide
+Lactam
+Alkyl imide
+N hetero imide
+Imide acidic
+Thioamide
+Thiolactam
+Oximester
+Amidine
+Hydroxamic acid
+Hydroxamic acid ester
+Imidoacid
+Imidoacid cyclic
+Imidoester
+Imidolactone
+Imidothioacid
+Imidothioacid cyclic
+Imidothioester
+Imidothiolactone
+Amidine
+Imidolactam
+Imidoylhalide
+Imidoylhalide cyclic
+Amidrazone
+Alpha aminoacid
+Alpha hydroxyacid
+Peptide middle
+Peptide C term
+Peptide N term
+Carboxylic orthoester
+Ketene
+Ketenacetal
+Nitrile
+Isonitrile
+Vinylogous carbonyl or carboxyl derivative
+Vinylogous acid
+Vinylogous ester
+Vinylogous amide
+Vinylogous halide
+Carbonic acid dieester
+Carbonic acid esterhalide
+Carbonic acid monoester
+Carbonic acid derivatives
+Thiocarbonic acid dieester
+Thiocarbonic acid esterhalide
+Thiocarbonic acid monoester
+Urea
+Thiourea
+Isourea
+Isothiourea
+Guanidine
+Carbaminic acid
+Urethan
+Biuret
+Semicarbazide
+Carbazide
+Semicarbazone
+Carbazone
+Thiosemicarbazide
+Thiocarbazide
+Thiosemicarbazone
+Thiocarbazone
+Isocyanate
+Cyanate
+Isothiocyanate
+Thiocyanate
+Carbodiimide
+Orthocarbonic derivatives
+Phenol
+1,2-Diphenol
+Arylchloride
+Arylfluoride
+Arylbromide
+Aryliodide
+Arylthiol
+Iminoarene
+Oxoarene
+Thioarene
+Hetero N basic H
+Hetero N basic no H
+Hetero N nonbasic
+Hetero O
+Hetero S
+Heteroaromatic
+Nitrite
+Thionitrite
+Nitrate
+Nitro
+Nitroso
+Azide
+Acylazide
+Diazo
+Diazonium
+Nitrosamine
+Nitrosamide
+N-Oxide
+Hydrazine
+Hydrazone
+Hydroxylamine
+Sulfon
+Sulfoxide
+Sulfonium
+Sulfuric acid
+Sulfuric monoester
+Sulfuric diester
+Sulfuric monoamide
+Sulfuric diamide
+Sulfuric esteramide
+Sulfuric derivative
+Sulfonic acid
+Sulfonamide
+Sulfonic ester
+Sulfonic halide
+Sulfonic derivative
+Sulfinic acid
+Sulfinic amide
+Sulfinic ester
+Sulfinic halide
+Sulfinic derivative
+Sulfenic acid
+Sulfenic amide
+Sulfenic ester
+Sulfenic halide
+Sulfenic derivative
+Phosphine
+Phosphine oxide
+Phosphonium
+Phosphorylen
+Phosphonic acid
+Phosphonic monoester
+Phosphonic diester
+Phosphonic monoamide
+Phosphonic diamide
+Phosphonic esteramide
+Phosphonic acid derivative
+Phosphoric acid
+Phosphoric monoester
+Phosphoric diester
+Phosphoric triester
+Phosphoric monoamide
+Phosphoric diamide
+Phosphoric triamide
+Phosphoric monoestermonoamide
+Phosphoric diestermonoamide
+Phosphoric monoesterdiamide
+Phosphoric acid derivative
+Phosphinic acid
+Phosphinic ester
+Phosphinic amide
+Phosphinic acid derivative
+Phosphonous acid
+Phosphonous monoester
+Phosphonous diester
+Phosphonous monoamide
+Phosphonous diamide
+Phosphonous esteramide
+Phosphonous derivatives
+Phosphinous acid
+Phosphinous ester
+Phosphinous amide
+Phosphinous derivatives
+Quart silane
+Non-quart silane
+Silylmonohalide
+Het trialkylsilane
+Dihet dialkylsilane
+Trihet alkylsilane
+Silicic acid derivative
+Trialkylborane
+Boric acid derivatives
+Boronic acid derivative
+Borohydride
+Quaternary boron
+Aromatic
+Heterocyclic
+Epoxide
+NH aziridine
+Spiro
+Annelated rings
+Bridged rings
+Sugar pattern 1
+Sugar pattern 2
+Sugar pattern combi
+Sugar pattern 2 reducing
+Sugar pattern 2 alpha
+Sugar pattern 2 beta
+Conjugated double bond
+Conjugated tripple bond
+Cis double bond
+Trans double bond
+Mixed anhydrides
+Halogen on hetero
+Halogen multi subst
+Trifluoromethyl
+C ONS bond
+Charged
+Anion
+Kation
+Salt
+1,3-Tautomerizable
+1,5-Tautomerizable
+Rotatable bond
+Michael acceptor
+Dicarbodiazene
+CH-acidic
+CH-acidic strong
+Chiral center specified
