@@ -3,11 +3,8 @@ import matplotlib as plt
 from itertools import islice
 import os
 
-#datapath = "G:\\Dev\\Data\\1000\\GNPS Python With Fragments"
-#final_path = "G:\\Dev\\Data\\1000\\GNPS Python Master\\Final Data With Fragments.txt"
-
-datapath = "G:\\Dev\\Data\\1000\\GNPS Python Double Filtered"
-final_path = "G:\\Dev\\Data\\1000\\GNPS Python Master\\Final Data.txt"
+datapath = "G:\\Dev\\Data\\100000\\GNPS Python 100000 Double Filtered"
+final_path = "G:\\Dev\\Data\\100000\\GNPS Python Master\\Final Data 100000.txt"
 
 all_files = os.listdir(datapath)
 

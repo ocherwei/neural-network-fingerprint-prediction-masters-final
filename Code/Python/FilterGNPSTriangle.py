@@ -3,12 +3,12 @@ import matplotlib as plt
 from itertools import islice
 import os
 
-datapath = "G:\\Dev\\Data\\1000\\GNPS Python Binned"
-filtered_datapath = "G:\\Dev\\Data\\1000\\GNPS Python Filtered"
+datapath = "G:\\Dev\\Data\\1000_Triangle\\GNPS Python Binned"
+filtered_datapath = "G:\\Dev\\Data\\1000_Triangle\\GNPS Python Filtered"
 
-double_filtered_datapath = "G:\\Dev\\Data\\1000\\GNPS Python Double Filtered"
+double_filtered_datapath = "G:\\Dev\\Data\\1000_Triangle\\GNPS Python Double Filtered"
 
-fragment_id_datapath = "G:\\Dev\\Data\\1000\\GNPS Python With Fragments"
+fragment_id_datapath = "G:\\Dev\\Data\\1000_Triangle\\GNPS Python With Fragments"
 
 mass_path = "G:\\Dev\\Data\\Fragment Masses.txt"
 

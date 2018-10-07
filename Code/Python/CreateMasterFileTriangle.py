@@ -6,8 +6,8 @@ import os
 #datapath = "G:\\Dev\\Data\\1000\\GNPS Python With Fragments"
 #final_path = "G:\\Dev\\Data\\1000\\GNPS Python Master\\Final Data With Fragments.txt"
 
-datapath = "G:\\Dev\\Data\\1000\\GNPS Python Double Filtered"
-final_path = "G:\\Dev\\Data\\1000\\GNPS Python Master\\Final Data.txt"
+datapath = "G:\\Dev\\Data\\1000_Triangle\\GNPS Python Double Filtered"
+final_path = "G:\\Dev\\Data\\1000_Triangle\\GNPS Python Master\\Final Data.txt"
 
 all_files = os.listdir(datapath)
 

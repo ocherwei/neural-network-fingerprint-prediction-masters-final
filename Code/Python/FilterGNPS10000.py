@@ -3,17 +3,17 @@ import matplotlib as plt
 from itertools import islice
 import os
 
-datapath = "G:\\Dev\\Data\\1000\\GNPS Python Binned"
-filtered_datapath = "G:\\Dev\\Data\\1000\\GNPS Python Filtered"
+datapath = "G:\\Dev\\Data\\10000\\GNPS Python 10000 Binned"
+filtered_datapath = "G:\\Dev\\Data\\10000\\GNPS Python 10000 Filtered"
 
-double_filtered_datapath = "G:\\Dev\\Data\\1000\\GNPS Python Double Filtered"
+double_filtered_datapath = "G:\\Dev\\Data\\10000\\GNPS Python 10000 Double Filtered"
 
-fragment_id_datapath = "G:\\Dev\\Data\\1000\\GNPS Python With Fragments"
+fragment_id_datapath = "G:\\Dev\\Data\\10000\\GNPS Python 10000 With Fragments"
 
 mass_path = "G:\\Dev\\Data\\Fragment Masses.txt"
 
 # Load fragment data for IDing
-dtype = [('fragment', 'U25'), ('mass', int)]
+dtype = [('fragment', 'U25'), ('mass', float)]
 fragments = np.loadtxt(mass_path, dtype=dtype, delimiter=',')
 
 
@@ -31,12 +31,13 @@ def top_six_filter(spectrum):
     filtered_spectrum = np.zeros(spectrum.shape, float)
     for i in range(len(spectrum)):  # For each mass bin
         low_end = 0
-        if i < 50:
-            low_end = i  # If there are fewer than 50 bins behind current windows, only go back to index 0.
-        if i >= 50:
-            low_end = 50  # Else, go back 50 indices
-        window_comparison = np.less(spectrum[i], spectrum[i-low_end:(i+50)])  # Compare value to all bins in 100Da range
-        if np.sum(window_comparison) < 7:  # If value is among top 6 in 100Da range, add it to filtered array.
+        if i < 500:
+            low_end = i  # If there are fewer than 500 bins behind current windows, only go back to index 0.
+        if i >= 500:
+            low_end = 500  # Else, go back 500 indices
+        # Compare value to all bins in 1000Da range
+        window_comparison = np.less(spectrum[i], spectrum[i-low_end:(i+500)])
+        if np.sum(window_comparison) < 7:  # If value is among top 6 in 1000Da range, add it to filtered array.
             filtered_spectrum[i] = spectrum[i]
     return filtered_spectrum
 
@@ -44,10 +45,11 @@ def top_six_filter(spectrum):
 def scan_for_fragments(spectrum):
     intensity_only = spectrum[:,1]
     for i, fragment in enumerate(fragments):
-        f_mass = fragment['mass']
+        f_mass = round(float(fragment['mass']), 1)
+        f_mass_index = int(f_mass * 10)
         # Slice intensities twice so bins to be compared share index.
-        spec = intensity_only[:(intensity_only.size - f_mass)]
-        comp_spec = intensity_only[f_mass:]
+        spec = intensity_only[:(intensity_only.size - f_mass_index)]
+        comp_spec = intensity_only[f_mass_index:]
         pairs = np.where(np.logical_and(spec > 0, comp_spec > 0))  # Compare bins separated by residue mass
         f_intensity = 0  # Default value for fragment presence
         if pairs[0].size > 0:

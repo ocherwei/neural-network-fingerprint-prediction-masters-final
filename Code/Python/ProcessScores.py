@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 matplotlib.rcParams.update({'font.size': 18})
 
-datapath = "E:\\Development Project\\Data\\Kernel Experiments 100"
+datapath = "G:\\Dev\\Data\\Kernel Experiments 100"
 
 sizes = ["Base", "3",  "16", "30", "60"]
 names = ["Base", "3",  "16", "30", "60"]
