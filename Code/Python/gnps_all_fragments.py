@@ -38,7 +38,7 @@ for index, line in enumerate(content):
             first_14_inchi_key = inchi_key[:14]
             if first_14_inchi_key not in first_14_inchi_key_set:
                 inchi_key_set.add(inchi_key)
-
+                has_mass_below_1000 = False
                 with open(filepath, 'w') as f:
                     f.write(">compound GNPS ALL " + str(count) + "\n")
                     f.write(">formula N/A\n")
@@ -51,9 +51,14 @@ for index, line in enumerate(content):
                     f.write(">ms2peaks\n")
                     while content[loop_index] != "END IONS\n":
                         mass, intensity = content[loop_index].split()
-                        f.write(mass + " " + intensity + "\n")
+                        if float(mass) <= 1000:
+                            has_mass_below_1000 = True
+                            f.write(mass + " " + intensity + "\n")
                         loop_index += 1
-                count += 1
-                first_14_inchi_key_set.add(first_14_inchi_key)
+                if has_mass_below_1000:
+                    count += 1
+                    first_14_inchi_key_set.add(first_14_inchi_key)
+                else:
+                    os.remove(filepath)
 
 print(len(inchi_key_set))
