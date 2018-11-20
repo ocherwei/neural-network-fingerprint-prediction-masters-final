@@ -1,10 +1,10 @@
-import java.io.File;
-
 public class Main {
 
     public static void main(String[] args)
     {
-        SmilesGrabber sg = new SmilesGrabber("E:/Development Project/Data/GNPS", 6);
+//        SmilesGrabberForSingleFile sg = new SmilesGrabberForSingleFile("G:/Dev/Data/ALL_GNPS_20181012.mgf");
+//        BitmapWriterSingleFile bw = new BitmapWriterSingleFile(sg.getSmilesList());
+        SmilesGrabber sg = new SmilesGrabber("G:/Dev/Data/GNPS For Family", 6);
         BitmapWriter bw = new BitmapWriter(sg.getSmilesList());
 
         bw.writeBitmap();
