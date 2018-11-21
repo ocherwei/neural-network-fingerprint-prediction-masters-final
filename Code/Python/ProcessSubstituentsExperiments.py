@@ -34,7 +34,7 @@ with open(process_average_substituent_path, 'w') as f:
 with open(process_average_substituent_path, 'r') as f:
     for line in f:
         substituent_term, auc_score, occurence = line.split("\t")
-        if float(auc_score) > 0.6 and float(occurence) > 0.5:
+        if float(auc_score) > 0.7 or 0.6 <= float(auc_score) <= 0.7 and float(occurence) > 0.5:
             filtered_substituent_terms.append(substituent_term)
 
 print(len(filtered_substituent_terms))

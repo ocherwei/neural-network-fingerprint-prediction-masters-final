@@ -21,7 +21,6 @@ for index, old_name in enumerate(ori_content):
     if old_name in new_content:
         legend_lookup_dict[str(index)] = new_content.index(old_name)
 
-print(legend_lookup_dict)
 classyfire_fragments_df = pd.read_csv(classyfire_datapath, sep=" ", header=None, names=["id", "mass_index", "value"])
 substituent_df = pd.read_csv(substituents_path, sep=" ", header=None, names=["id", "substituent_index", "value"])
 filtered_substituent_legend_df = pd.read_csv(filtered_substituents_legend_index_path, header=None, names=["substituent_index"])
