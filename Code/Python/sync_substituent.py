@@ -1,13 +1,16 @@
 import os
 import pandas as pd
 
-classyfire_datapath = "G:\\Dev\\Data\\For Substituent GNPS ALL\\GNPS Python Master\\Final Data.txt"
-substituents_path = "G:\\Dev\\Data\\Classyfire Taxanomy\\GNPS_substituents.txt"
-original_substituents_legend_path = "G:\\Dev\\Data\\Classyfire Taxanomy\\GNPS_substituents_legend.txt"
-filtered_substituents_legend_names_path = "G:\\Dev\\Data\\filtered_top_substituents_after_parameters_legend.txt"
-filtered_substituents_legend_index_path = "G:\\Dev\\Data\\filtered_top_substituents_index_after_parameters_legend.txt"
-synced_substituents_path = "G:\\Dev\\Data\\Classyfire Taxanomy\\GNPS_synced_substituents.txt"
-filtered_classyfire_fragments_path = "G:\\Dev\\Data\\For Substituent GNPS ALL\\GNPS Python Master\\Final Filtered Data.txt"
+datapath = '/Users/simon/Downloads/Substituent_Data'
+
+
+classyfire_datapath = datapath + os.sep + "For Substituent GNPS ALL" + os.sep + "GNPS Python Master" + os.sep + "Final Data.txt"
+substituents_path = datapath+os.sep+"Classyfire Taxanomy"+os.sep+"GNPS_substituents.txt"
+original_substituents_legend_path = datapath+os.sep+"Classyfire Taxanomy"+os.sep+"GNPS_substituents_legend.txt"
+filtered_substituents_legend_names_path = datapath + os.sep + "after_filtering_score_and_occurences"+os.sep+"filtered_top_substituents_after_parameters_legend.txt"
+filtered_substituents_legend_index_path = datapath + os.sep + "after_filtering_score_and_occurences"+os.sep+"filtered_top_substituents_index_after_parameters_legend.txt"
+synced_substituents_path =datapath+os.sep+"Classyfire Taxanomy"+os.sep+"GNPS_synced_substituents.txt"
+filtered_classyfire_fragments_path = datapath + os.sep + "For Substituent GNPS ALL" + os.sep + "GNPS Python Master" + os.sep + "Final Filtered Data.txt"
 
 with open(original_substituents_legend_path, 'r') as f:
     ori_content = f.readlines()
