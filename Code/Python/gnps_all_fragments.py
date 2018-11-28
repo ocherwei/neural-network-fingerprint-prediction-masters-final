@@ -2,10 +2,12 @@ import os
 import pandas as pd
 
 all_gnps_path = "G:\\Dev\\Data\\GNPSLibraries_allSMILES.mgf"
+all_gnps_filtered_path = "G:\\Dev\\Data\\GNPSLibraries_allSMILES_filtered.mgf"
 all_gnps_fragments_path = "G:\\Dev\\Data\\ALL GNPS Fragments"
 
 inchi_key_set = set()
 first_14_inchi_key_set = set()
+to_be_deleted = []
 
 with open(all_gnps_path, 'r') as f:
     content = f.readlines()
@@ -28,11 +30,17 @@ for index, line in enumerate(content):
         loop_index = inchi_key_index + 1
         smiles_index = inchi_key_index - 1
         parent_mass_index = smiles_index - 6
+        if content[parent_mass_index].startswith("MSLEVEL"):
+            parent_mass_index -= 3
+
+        starting_index = parent_mass_index - 2
+
+        while not content[starting_index].startswith("BEGIN IONS"):
+            starting_index -= 1
 
         filepath = os.path.join(all_gnps_fragments_path, "GNPS_ALL_" + str(count) + ".ms")
 
         inchi_key = line[9:-1]
-        print(count)
 
         if inchi_key != "" and content[loop_index] != "END IONS\n":
             first_14_inchi_key = inchi_key[:14]
@@ -60,5 +68,22 @@ for index, line in enumerate(content):
                     first_14_inchi_key_set.add(first_14_inchi_key)
                 else:
                     os.remove(filepath)
+            else:
+                while content[loop_index] != "END IONS\n":
+                    loop_index += 1
+
+                to_be_deleted.append((starting_index, loop_index + 1))
 
 print(len(inchi_key_set))
+
+for start, end in to_be_deleted:
+    while start <= end:
+        content[start] = "TO BE DELETED\n"
+        start += 1
+
+filtered_content = [line for line in content if line != "TO BE DELETED\n"]
+print(len(filtered_content))
+
+with open(all_gnps_filtered_path, 'w') as f:
+    for line in filtered_content:
+        f.write(line)
