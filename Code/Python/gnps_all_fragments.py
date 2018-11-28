@@ -1,9 +1,11 @@
 import os
 import pandas as pd
 
-all_gnps_path = "G:\\Dev\\Data\\GNPSLibraries_allSMILES.mgf"
-all_gnps_filtered_path = "G:\\Dev\\Data\\GNPSLibraries_allSMILES_filtered.mgf"
-all_gnps_fragments_path = "G:\\Dev\\Data\\ALL GNPS Fragments"
+datapath = "G:\\Dev\\Data\\Substituents Experiments\\"
+
+all_gnps_path = datapath + os.sep + "GNPSLibraries_allSMILES.mgf"
+all_gnps_filtered_path = datapath + os.sep + "GNPSLibraries_allSMILES_filtered.mgf"
+all_gnps_fragments_path = datapath + os.sep + "ALL GNPS Fragments"
 
 inchi_key_set = set()
 first_14_inchi_key_set = set()
